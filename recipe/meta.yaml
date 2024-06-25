@@ -1,5 +1,5 @@
 {% set name = "pysmt" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pysmt/pysmt/archive/v{{ version }}.tar.gz
-  sha256: d0315f33a35bf9469c6106531f71cd60f76a595aa982db5e71c7df230e6526c1
+  sha256: d69561abccd089c23352a6862b3939574d47d37ed82a5d7dce75127437c06032
 
 build:
   entry_points:
