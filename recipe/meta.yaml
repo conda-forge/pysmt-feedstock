@@ -14,14 +14,14 @@ build:
     - pysmt-install = pysmt.cmd.install:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -31,6 +31,7 @@ test:
     - pysmt-install --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.pysmt.org
